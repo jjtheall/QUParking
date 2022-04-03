@@ -30,4 +30,11 @@ public class ParkingLot {
 	public void setTakenForTime(int time){
 		
 	}
+
+	//sets all spots in spots array to open
+	public void clearLot(){
+		for(int i=0; i<spots.length; i++){
+			spots[i].setTaken(false);
+		}
+	}
 }
