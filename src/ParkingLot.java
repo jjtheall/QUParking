@@ -9,8 +9,9 @@ public class ParkingLot {
 	public static final int TIME_NOON = 1;
 	public static final int TIME_EVENING = 2;
 
-	public ParkingLot() {
-		spots = new Spot[100];
+	public ParkingLot(int size) {
+		
+		spots = new Spot[size];
 
 		for (int i = 0; i < spots.length; i++) {
 			Spot currentSpot = new Spot(i);

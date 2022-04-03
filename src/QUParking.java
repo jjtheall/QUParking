@@ -4,7 +4,7 @@ public class QUParking {
 
 	public static void main(String[] args) {
 
-		ParkingLot test = new ParkingLot();
+		ParkingLot test = new ParkingLot(100);
 		test.setTakenForTime(ParkingLot.TIME_NOON);
 
 		test.setTakenAtIndex(80);
