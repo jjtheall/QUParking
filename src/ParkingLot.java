@@ -6,7 +6,7 @@ public class ParkingLot {
 	//to setTakenForTime method
 	public static final int TIME_MORNING = 0;
 	public static final int TIME_NOON = 1;
-	public static final int TIME_AFTERNOON = 2;
+	public static final int TIME_EVENING = 2;
 
 	public ParkingLot() {
 		spots = new Spot[100];
@@ -38,15 +38,21 @@ public class ParkingLot {
 		switch(time){
 			case TIME_MORNING:
 				upperBound = (int) (.9 * spots.length);
-				System.out.println(upperBound);
+				for(int i=0; i<upperBound; i++){
+					spots[i].setTaken(true);
+				}
 				break;
 			case TIME_NOON:
 				upperBound = (int) (.75 * spots.length);
-				System.out.println(upperBound);
+				for(int i=0; i<upperBound; i++){
+					spots[i].setTaken(true);
+				}
 				break;
-			case TIME_AFTERNOON:
+			case TIME_EVENING:
 				upperBound = (int) (.4 * spots.length);
-				System.out.println(upperBound);
+				for(int i=0; i<upperBound; i++){
+					spots[i].setTaken(true);
+				}
 				break;
 			default:
 				System.out.println("not a valid time");

@@ -4,7 +4,7 @@ public class QUParking {
     {
 
     	ParkingLot test = new ParkingLot();
-    	test.setTakenForTime(ParkingLot.TIME_AFTERNOON);
+    	test.setTakenForTime(ParkingLot.TIME_NOON);
     	Spot[] spots = test.getSpots();
     	
     	for(int i = 0; i < spots.length ; i++)
