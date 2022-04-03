@@ -23,7 +23,7 @@ public class ParkingLot {
 		return spots;
 	}
 	
-	public void setTaken(int index) {
+	public void setTakenAtIndex(int index) {
 		spots[index].setTaken(true);
 	}
 
