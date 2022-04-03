@@ -37,4 +37,9 @@ public class Spot {
     public void setTaken(boolean taken){
         this.taken = taken;
     }
+
+    @Override
+    public String toString(){
+        return "Spot " + this.id + " - " + this.taken;
+    }
 }

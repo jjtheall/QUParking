@@ -10,7 +10,7 @@ public class QUParking {
     	
     	for(int i = 0; i < spots.length ; i++)
     	{
-    		System.out.println(spots[i].getID());
+    		System.out.println(spots[i]);
     	}
     }
 }
