@@ -1,15 +1,17 @@
+import java.util.ArrayList;
+
 public class QUParking {
 
-    public static void main(String[] args)
-    {
+	public static void main(String[] args) {
 
-    	ParkingLot test = new ParkingLot();
-    	test.setTakenForTime(ParkingLot.TIME_NOON);
-    	Spot[] spots = test.getSpots();
-    	
-    	for(int i = 0; i < spots.length ; i++)
-    	{
-    		System.out.println(spots[i]);
-    	}
-    }
+		ParkingLot test = new ParkingLot();
+		test.setTakenForTime(ParkingLot.TIME_NOON);
+
+		test.setTakenAtIndex(80);
+		ArrayList<Spot> available = test.avaliableSpots();
+
+		for (int i = 0; i < available.size(); i++) {
+			System.out.println(available.get(i));
+		}
+	}
 }
