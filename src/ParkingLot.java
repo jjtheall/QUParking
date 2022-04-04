@@ -2,6 +2,7 @@ import java.util.ArrayList;
 public class ParkingLot {
 
 	private Spot[] spots;
+	private int numWaiting;
 
 	// static instance vars to standardize how we pass time param
 	// to setTakenForTime method
@@ -9,8 +10,9 @@ public class ParkingLot {
 	public static final int TIME_NOON = 1;
 	public static final int TIME_EVENING = 2;
 
-	public ParkingLot(int size) {
-		
+	public ParkingLot(int size, int numWaiting) {
+
+		this.numWaiting = numWaiting;
 		spots = new Spot[size];
 
 		for (int i = 0; i < spots.length; i++) {
@@ -88,6 +90,16 @@ public class ParkingLot {
 		for (int i = 0; i < spots.length; i++) {
 			System.out.println(spots[i]);
 		}
+	}
+
+	//getter for numWaiting
+	public int getNumWaiting(){
+		return this.numWaiting;
+	}
+
+	//setter for numWaiting
+	public void setNumWaiting(int numWaiting){
+		this.numWaiting = numWaiting;
 	}
 
 }
